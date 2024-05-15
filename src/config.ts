@@ -8,6 +8,7 @@ export interface Config {
 export const Config =Schema.object({
   SteamHelperAPIHost: Schema.string().default('https://steam-family-lib-viewer.ktlab.io'),
   libMonitorCron: Schema.string().default("*/15 * * * *"),
+  capsuleType: Schema.union(['Landscape', 'Portrait']).default('Landscape'),
 })
 .i18n({
   'zh-CN': require('./locales/zh-CN')._config,
