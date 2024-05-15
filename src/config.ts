@@ -3,6 +3,7 @@ import { Schema } from 'koishi'
 export interface Config {
   SteamHelperAPIHost: string,
   libMonitorCron: string,
+  capsuleType: union,
 }
 
 export const Config =Schema.object({
